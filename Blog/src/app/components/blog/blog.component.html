@@ -1,1 +1,16 @@
-<p>blog works!</p>
+<h1 class="MainTitle">AGoodBlog</h1>
+<div class="separation"></div>
+<div class="newsForm">
+  <div class="form">
+    <input type="text" placeholder="Título" [(ngModel)]="noticia.titulo" />
+    <input type="text" placeholder="Imagen" [(ngModel)]="noticia.imagen" />
+    <input type="text" placeholder="Texto" [(ngModel)]="noticia.texto" />
+    <input type="text" placeholder="Fecha" [(ngModel)]="noticia.fecha" />
+  </div>
+  <div class="createNew">
+    <button (click)="cargarNoticia()">Crear Noticia</button>
+  </div>
+</div>
+
+<div class="separation"></div>
+<ul [innerHTML]="pintarNoticia()"></ul>

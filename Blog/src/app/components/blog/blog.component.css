@@ -1,0 +1,39 @@
+.separation {
+  border-bottom: 2px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.MainTitle {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+.newsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form input {
+  width: 150px;
+  padding: 5px;
+}
+
+.createNew {
+  display: flex;
+  justify-content: center;
+}
+
+.createNew button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
