@@ -13,4 +13,20 @@
 </div>
 
 <div class="separation"></div>
-<ul [innerHTML]="pintarNoticia()"></ul>
+<div class="newsList">
+  <ul>
+    <article class="new">
+      <h2>{{ arrayNoticiasBase[0].titulo }}</h2>
+      <img src="{{ arrayNoticiasBase[0].imagen }}" />
+      <p>{{ arrayNoticiasBase[0].texto }}</p>
+      <p>{{ arrayNoticiasBase[0].fecha }}</p>
+    </article>
+    <article class="new">
+      <h2>{{ arrayNoticiasBase[1].titulo }}</h2>
+      <img src="{{ arrayNoticiasBase[1].imagen }}" />
+      <p>{{ arrayNoticiasBase[1].texto }}</p>
+      <p>{{ arrayNoticiasBase[1].fecha }}</p>
+    </article>
+  </ul>
+  <ul [innerHTML]="pintarNoticia()"></ul>
+</div>
