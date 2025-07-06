@@ -37,3 +37,25 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+ul {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0;
+}
+
+.new {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid black;
+  align-items: center;
+  border-radius: 30px;
+}
+.new img {
+  height: 30%;
+  width: 30%;
+}
