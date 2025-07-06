@@ -18,9 +18,17 @@ export class BlogComponent {
   arrayNoticias: Inoticias[] = [];
 
   cargarNoticia() {
-    this.arrayNoticias.push(this.noticia);
-    this.noticia = { titulo: '', imagen: '', texto: '', fecha: '' };
-    console.log(this.arrayNoticias);
+    if (
+      this.noticia.titulo === '' ||
+      this.noticia.imagen === '' ||
+      this.noticia.texto === '' ||
+      this.noticia.fecha === ''
+    ) {
+      alert('Faltan campos por rellenar');
+    } else {
+      this.arrayNoticias.push(this.noticia);
+      this.noticia = { titulo: '', imagen: '', texto: '', fecha: '' };
+    }
   }
   pintarNoticia() {
     let html = '';

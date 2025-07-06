@@ -17,18 +17,34 @@
 
 .form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 20px;
 }
 
 .form input {
   width: 150px;
   padding: 5px;
+  border-radius: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.form input.textContainer {
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+  border-radius: 12px;
+  text-align: left;
+  vertical-align: top;
+  resize: vertical;
 }
 
 .createNew {
   display: flex;
   justify-content: center;
+}
+.cnButton {
+  border-radius: 10px;
 }
 
 .createNew button {
