@@ -1,34 +1,73 @@
 .separation {
-  border-bottom: 2px solid black;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  border-bottom: 3px solid white;
+  margin: 0;
 }
 .MainTitle {
   display: flex;
-  margin: 10px;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   justify-content: center;
+  background: linear-gradient(135deg, black, #8f2a98, black, #4b83b7, black);
+  color: white;
 }
 .newsForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 .form input {
-  width: 150px;
+  width: 100%;
   padding: 5px;
+  border-radius: 12px;
+  text-align: left;
+  vertical-align: top;
+  border: 2px solid black;
+  outline: none;
+}
+
+.form .textContainer {
+  width: 200%;
+  height: 300px;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: left;
+  vertical-align: top;
+  overflow: auto;
+  font-family: inherit;
+  resize: none;
+  border: 2px solid black;
+  outline: none;
 }
 
 .createNew {
   display: flex;
   justify-content: center;
+}
+.cnButton {
+  background-color: #f6d1ff;
+  color: #1e1e1e;
+  border: 2px solid black;
+  border-radius: 12px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cnButton:hover {
+  background-color: #b6deff;
 }
 
 .createNew button {
@@ -46,16 +85,14 @@ ul {
   margin: 0;
 }
 
-.new {
+.newsList {
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  margin: 20px;
-  border: 2px solid black;
-  align-items: center;
-  border-radius: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.new img {
-  height: 30%;
-  width: 30%;
+
+@media (max-width: 768px) {
+  .new {
+    flex: 0 0 100%;
+  }
 }
