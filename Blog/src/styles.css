@@ -2,8 +2,10 @@
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #3b46aa, #4b83b7, #8f2a98, #311449);
 }
 .new {
+  flex: 0 0 45%;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -11,8 +13,27 @@ body {
   border: 2px solid black;
   align-items: center;
   border-radius: 30px;
+  box-sizing: border-box;
+  background-color: white;
 }
+
+.new h2 {
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
 .new img {
   height: 30%;
   width: 30%;
+  margin: 5%;
+  border-radius: 30px;
+}
+
+.new p {
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
 }

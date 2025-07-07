@@ -4,12 +4,12 @@
   <div class="form">
     <input type="text" placeholder="Título" [(ngModel)]="noticia.titulo" />
     <input type="text" placeholder="Imagen url" [(ngModel)]="noticia.imagen" />
-    <input
-      type="text"
+    <textarea
       placeholder="Texto"
       class="textContainer"
       [(ngModel)]="noticia.texto"
-    />
+    ></textarea>
+
     <input type="text" placeholder="Fecha" [(ngModel)]="noticia.fecha" />
   </div>
   <div class="createNew">
@@ -18,20 +18,4 @@
 </div>
 
 <div class="separation"></div>
-<div class="newsList">
-  <ul>
-    <article class="new">
-      <h2>{{ arrayNoticiasBase[0].titulo }}</h2>
-      <img src="{{ arrayNoticiasBase[0].imagen }}" />
-      <p>{{ arrayNoticiasBase[0].texto }}</p>
-      <p>{{ arrayNoticiasBase[0].fecha }}</p>
-    </article>
-    <article class="new">
-      <h2>{{ arrayNoticiasBase[1].titulo }}</h2>
-      <img src="{{ arrayNoticiasBase[1].imagen }}" />
-      <p>{{ arrayNoticiasBase[1].texto }}</p>
-      <p>{{ arrayNoticiasBase[1].fecha }}</p>
-    </article>
-  </ul>
-  <ul [innerHTML]="pintarNoticia()"></ul>
-</div>
+<div class="newsList" [innerHTML]="pintarNoticia()"></div>
